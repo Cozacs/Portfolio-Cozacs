@@ -7,6 +7,11 @@
 }
 
 #ProjetoNaTela {
+    width: 40vw;
+    max-width: 700px;
+}
+
+#ProjetoNaTela {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
