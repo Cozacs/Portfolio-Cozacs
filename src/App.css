@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Cores do site*/
+  --cor01: #FFFFFF;/*Branco Letra*/
+  --cor02: #E9E8E9;/*Branco Fundo*/
+  --cor03: #000000;/*Preto Letra*/
+  --cor04: #100F0D;/*Preto Fundo*/
+  /*Fonte unica do site*/
+  --fontTel: 'Telex', sans-serif;
+}
+
+html, body {
+  font-family: var(--fontTel);
+}
+
+.fundoDasSecoesDark {
+  background-image: url('../public/assets/BackgroundTecladoDark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fundoDasSecoesLight {
+  background-image: url('../public/assets/BackgroundTecladoLight.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

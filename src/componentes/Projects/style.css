@@ -1,0 +1,152 @@
+#Projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+#ProjetoNaTela {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#ProjetoNaTela h1 {
+    width: 60%;
+    margin: 20px auto;
+    font-size: clamp(8px, 8vw, 35px);
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#conteudoProjeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#conteudoProjeto p {
+    width: 80%;
+    margin: 20px auto;
+    font-size: clamp(8px, 8vw, 20px);
+}
+
+#conteudoProjeto a {
+    font-size: clamp(8px, 8vw, 20px);
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+#icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#TamanhoIcone {
+    width: 300%;
+}
+
+#abrirProjeto{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#mostraprojeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.letraLight {
+    color: var(--cor03);
+}
+
+.letraDark {
+    color: var(--cor01);
+}
+
+.FundoDark {
+    background-color: var(--cor01);
+}
+
+.FundoLight {
+    background-color: var(--cor03);
+}
+
+@media screen and (max-width: 350px) {
+    
+    #Projetos {
+        flex-direction: column;
+    }
+
+    #conteudoProjeto p {
+        font-size: clamp(13px, 3vw, 23px);
+    }
+
+    #conteudoProjeto a {
+        font-size: clamp(13px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #mostraprojeto img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 700px) {
+    
+    #Projetos {
+        flex-direction: column;
+    }
+
+    #conteudoProjeto a {
+        font-size: clamp(15px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #conteudoProjeto p {
+        font-size: clamp(13px, 3vw, 23px);
+    }
+
+    #mostraprojeto img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1440px) {
+    
+    #Projetos {
+        flex-direction: column;
+    }
+
+    #ProjetoNaTela h1 {
+        width: 50%;
+        text-align: center;
+    }
+
+    #conteudoProjeto {
+        width: 60%;
+    }
+
+    #conteudoProjeto a {
+        font-size: clamp(15px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #conteudoProjeto p {
+        font-size: clamp(13px, 3vw, 23px);
+    }
+}

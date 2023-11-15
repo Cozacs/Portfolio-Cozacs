@@ -1,0 +1,212 @@
+.About {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#Abouti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+#Abouti img {
+    width: 40%;
+}
+
+#AboutInfo {
+    width: 40%;
+    text-align: center;
+}
+
+#AboutInfo h1{
+    width: 40%;
+    margin: 20px auto;
+    font-size: clamp(8px, 8vw, 35px);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.ContentDark {
+    background-color: var(--cor01);
+    color: var(--cor03);
+}
+
+.ContentLight {
+    background-color: var(--cor04);
+    color: var(--cor02);
+}
+
+#AboutInfo div {
+    width: 80%;
+    margin: 20px auto;
+    font-size: clamp(8px, 8vw, 20px);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#content {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#textAbout {
+    text-align: left;
+    margin: 20px auto;
+    font-size: clamp(8px, 8vw, 23px);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#mail {
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#mail img {
+    height: 30px;
+    width: 30px;
+}
+
+#mail p {
+    padding: 3px;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 350px) {
+    
+    #Abouti {
+        flex-direction: column-reverse;
+    }
+
+    #Abouti img {
+        width: 100%;
+    }
+
+    #AboutInfo {
+        width: 100%;
+    }
+
+    #AboutInfo h1{
+        width: 100%;
+    }
+
+    #AboutInfo div {
+        width: 100%;
+    }
+
+    #textAbout {
+        font-size: clamp(13px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #mail {
+        width: 100%;
+    }
+    
+    #mail img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #mail p {
+        padding: 3px;
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 700px) {
+    
+    #Abouti {
+        flex-direction: column-reverse;
+    }
+
+    #Abouti img {
+        width: 100%;
+    }
+
+    #AboutInfo {
+        width: 100%;
+    }
+
+    #AboutInfo h1{
+        width: 100%;
+    }
+
+    #AboutInfo div {
+        width: 100%;
+    }
+
+    #textAbout {
+        font-size: clamp(15px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #mail {
+        width: 100%;
+    }
+    
+    #mail img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #mail p {
+        padding: 3px;
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1440px) {
+    
+    #Abouti {
+        flex-direction: column-reverse;
+    }
+
+    #Abouti img {
+        width: 60%;
+    }
+
+    #AboutInfo {
+        width: 60%;
+    }
+
+    #AboutInfo h1{
+        width: 100%;
+    }
+
+    #AboutInfo div {
+        width: 100%;
+    }
+
+    #textAbout {
+        font-size: clamp(15px, 3vw, 23px);
+        padding: 5px 10px;
+    }
+
+    #mail {
+        width: 60%;
+    }
+    
+    #mail img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    #mail p {
+        padding: 3px;
+        padding: 5px 20px;
+    }
+}

@@ -1,0 +1,148 @@
+.back {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.backDark {
+    background-image: url("../../../public/assets/bannerBackDark.png");
+}
+
+.backLight {
+    background-image: url("../../../public/assets/bannerBackLight.png");
+}
+
+.back h1 {
+    margin-bottom: 5px;
+    font-size: clamp(8px, 10vw, 40px);
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.back h3 {
+    margin-bottom: 25px;
+    font-size: clamp(8px, 10vw, 15px);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.backDark h1 {
+    color: var(--cor01);
+    background-color: var(--cor03);
+}
+
+.backDark h3 {
+    color: var(--cor01);
+    background-color: var(--cor03);
+}
+
+.backLight h1 {
+    color: var(--cor03);
+    background-color: var(--cor02);
+}
+
+.backLight h3 {
+    color: var(--cor03);
+    background-color: var(--cor02);
+}
+
+.Shortcuts {
+    opacity: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    row-gap: 95px;
+    padding: 60px;
+    width: 80vw;
+    max-width: 600px;
+}
+
+.ShortDark {
+    background-color: var(--cor02);
+}
+
+.ShortLight {
+    background-color: var(--cor03);
+}
+
+.Acess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    width: 30%;
+}
+
+.Acess img {
+    width: 40%;
+}
+
+.Acess a, p {
+    text-decoration: none;
+    font-size: clamp(15px, 10vw, 15px);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.opacidade {
+    opacity: 80%;
+}
+
+.AcessDark a {
+    color: var(--cor01);
+    background-color: var(--cor03);
+}
+
+.AcessDark p {
+    color: var(--cor01);
+    background-color: var(--cor03);
+}
+
+.AcessLight a {
+    color: var(--cor03);
+    background-color: var(--cor01);
+}
+
+.AcessLight p {
+    color: var(--cor03);
+    background-color: var(--cor01);
+}
+
+.Acess p {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .back {
+        height: 100vh;
+    }
+
+    .back h1 {
+        font-size: clamp(25px, 3vw, 40px);
+    }
+    
+    .back h3 {
+        font-size: clamp(12px, 3vw, 15px);
+    }
+
+    .Shortcuts {
+        row-gap: 5px;
+        padding: 20px;
+    }
+
+    .Acess {
+        width: 50%;
+    }
+
+    .Acess a, p {
+        font-size: clamp(12px, 3vw, 15px);
+    }
+}
