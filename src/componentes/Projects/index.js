@@ -28,28 +28,28 @@ export default function Projects({modoCor, idioma}) {
 
     function js(){
         if (naTela.JS === true){
-           return (<img src={modoCor === 'escuro' ? 'assets/iconeJSDark.png' : 'assets/iconeJSLight.png' } alt="imagem JS" />);
+           return (<img src={modoCor === 'escuro' ? 'assets/iconeJSDark.png' : 'assets/iconeJSLight.png' } alt="imagem JS"  title='JavaScript'/>);
         }
         return null;
     };
 
     function css(){
         if (naTela.CSS === true){
-           return (<img src={modoCor === 'escuro' ? 'assets/iconeCSSDark.png' : 'assets/iconeCSSLight.png' } alt="imagem CSS" />);
+           return (<img src={modoCor === 'escuro' ? 'assets/iconeCSSDark.png' : 'assets/iconeCSSLight.png' } alt="imagem CSS" title='CSS' />);
         }
         return null;
     };
 
     function html(){
         if (naTela.HTML === true){
-           return (<img src={modoCor === 'escuro' ? 'assets/iconeHTMLDark.png' : 'assets/iconeHTMLLight.png' } alt="imagem HTML" />);
+           return (<img src={modoCor === 'escuro' ? 'assets/iconeHTMLDark.png' : 'assets/iconeHTMLLight.png' } alt="imagem HTML" title='HTML'/>);
         }
         return null;
     };
 
     function react(){
         if (naTela.REACT === true){
-           return (<img src={modoCor === 'escuro' ? 'assets/iconeREACTDark.png' : 'assets/iconeREACTLight.png' } alt="imagem REACT" />);
+           return (<img src={modoCor === 'escuro' ? 'assets/iconeReactDark.png' : 'assets/iconeReactLight.png' } alt="imagem REACT" title='React' />);
         }
         return null;
     };
