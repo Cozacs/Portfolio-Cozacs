@@ -22,28 +22,40 @@ export default function Banner({modoCor, setModoCor, setIdioma}) {
             <h3>FULLSTACK</h3>
             <div className={defineShortcuts}>
                 <div className={defineAcess}>
-                    <img src={corGit} alt="GitHub" />
-                    <a href="https://github.com/Cozacs" target='_blank' rel='noreferrer'className='opacidade'>GitHub</a>
+                    <a href="https://github.com/Cozacs" target='_blank' rel='noreferrer' >
+                        <img src={corGit} alt="GitHub" />
+                        <p className='opacidade'>GitHub</p>
+                    </a>
                 </div>
                 <div className={defineAcess}>
-                    <img src={corLinked} alt="LinkedIn" />
-                    <a href="https://www.linkedin.com/in/victor-hugo-cozac-54703213a/" target='_blank' rel='noreferrer' className='opacidade'>LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/victor-hugo-cozac-54703213a/" target='_blank' rel='noreferrer'>
+                        <img src={corLinked} alt="LinkedIn" />
+                        <p className='opacidade'>LinkedIn</p>
+                    </a>
                 </div>
                 <div className={defineAcess}>
-                    <img src={corModoCor} alt="Cor da Pagina" />
-                    <p onClick={mudaModo} className='opacidade'>{textoModo}</p>
+                    <a onClick={mudaModo} >
+                        <img src={corModoCor} alt="Cor da Pagina" />
+                        <p className='opacidade'>{textoModo}</p>
+                    </a>
                 </div>
                 <div className={defineAcess}>
-                    <img src={corLang} alt="Cor da Pagina" />
-                    <p onClick={() => setIdioma('pt')} className='opacidade'>Português</p>
+                    <a onClick={() => setIdioma('pt')}>
+                        <img src={corLang} alt="Cor da Pagina" />
+                        <p className='opacidade'>Português</p>
+                    </a>
                 </div>
                 <div className={defineAcess}>
-                    <img src={corAboutIcon} alt="Cor da Pagina" />
-                    <a href="#About" className='opacidade'>About me</a>
+                    <a href="#About">
+                        <img src={corAboutIcon} alt="Cor da Pagina" />
+                        <p className='opacidade'>About me</p>
+                    </a>
                 </div>
                 <div className={defineAcess}>
-                    <img src={corProjectIcon} alt="Cor da Pagina" />
-                    <a href="#Projetos" className='opacidade'>Projects</a>
+                    <a href="#Projetos">
+                        <img src={corProjectIcon} alt="Cor da Pagina" />
+                        <p className='opacidade'>Projects</p>
+                    </a>
                 </div>
             </div>
         </section>
