@@ -1,0 +1,11 @@
+.BackFootDark p {
+    background-color: var(--cor04);
+    color: var(--cor01);
+    height: 5vh;
+}
+
+.BackFootLight p {
+    background-color: var(--cor01);
+    color: var(--cor04);
+    height: 5vh;
+}

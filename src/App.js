@@ -5,6 +5,7 @@ import Estandarte from './componentes/Estandarte';
 import About from './componentes/AboutMe';
 import Sobre from './componentes/SobreMim';
 import Projects from './componentes/Projects';
+import Footer from './componentes/footer';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
           <About modoCor={cor} />
           <Projects modoCor={cor} idioma={idioma} />
         </div>
+        <Footer modoCor={cor} />
       </main>
     );
   } else if (idioma === 'pt'){
@@ -30,6 +32,7 @@ function App() {
           <Sobre modoCor={cor} />
           <Projects modoCor={cor} idioma={idioma} />
         </div>
+        <Footer modoCor={cor} />
       </main>
     );
   }
