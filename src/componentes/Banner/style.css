@@ -100,14 +100,15 @@
     width: 70%;
 }
 
-.Acess p {
+.padraoLink{
     text-decoration: none;
-    font-size: clamp(15px, 10vw, 15px);
-    border-radius: 10px;
-    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Acess a {
+.Acess a, p {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -117,14 +118,18 @@
 
 .opacidade {
     opacity: 80%;
+    text-decoration: none;
+    font-size: clamp(15px, 10vw, 15px);
+    border-radius: 10px;
+    padding: 5px 15px;
 }
 
-.AcessDark p {
+.AcessDark .opacidade  {
     color: var(--cor01);
     background-color: var(--cor03);
 }
 
-.AcessLight p {
+.AcessLight .opacidade  {
     color: var(--cor03);
     background-color: var(--cor01);
 }

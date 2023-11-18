@@ -34,16 +34,16 @@ export default function Estandarte({modoCor, setModoCor, setIdioma}) {
                     </a>
                 </div>
                 <div className={defineAcess}>
-                    <a onClick={mudaModo} >
+                    <p onClick={mudaModo} href="#">
                         <img src={corModoCor} alt="Cor da Pagina" />
-                        <p className='opacidade'>{textoModo}</p>
-                    </a>
+                        <span className='opacidade'>{textoModo}</span>
+                    </p>
                 </div>
                 <div className={defineAcess}>
-                <a onClick={() => setIdioma('en')}>
+                <p onClick={() => setIdioma('en')} href="#">
                         <img src={corLang} alt="Cor da Pagina" />
-                        <p className='opacidade'>English</p>
-                    </a>
+                        <span className='opacidade'>English</span>
+                    </p>
                 </div>
                 <div className={defineAcess}>
                     <a href="#About">

@@ -34,16 +34,16 @@ export default function Banner({modoCor, setModoCor, setIdioma}) {
                     </a>
                 </div>
                 <div className={defineAcess}>
-                    <a onClick={mudaModo} >
+                    <p onClick={mudaModo}>
                         <img src={corModoCor} alt="Cor da Pagina" />
-                        <p className='opacidade'>{textoModo}</p>
-                    </a>
+                        <span className='opacidade'>{textoModo}</span>
+                    </p>
                 </div>
                 <div className={defineAcess}>
-                    <a onClick={() => setIdioma('pt')}>
+                    <p onClick={() => setIdioma('pt')} >
                         <img src={corLang} alt="Cor da Pagina" />
-                        <p className='opacidade'>Português</p>
-                    </a>
+                        <span className='opacidade'>Português</span>
+                    </p>
                 </div>
                 <div className={defineAcess}>
                     <a href="#About">
