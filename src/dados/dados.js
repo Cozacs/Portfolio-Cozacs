@@ -39,7 +39,7 @@ const DadosDeProjetos = [
     },{
         id : 4,
         foto : 'QualIdade',
-        tituloEn: 'Project - How Old am i?',
+        tituloEn: 'Project - How Old r U?',
         tituloPT: 'Projeto - Qual a minha idade?',
         TextoEn: 'Project created by CursoEmVideo, developed by my self with high visual feedback for the user',
         TextoPT: 'Projeto proposto pela CursoEmVideo, desenvolvido por mim com um alto retorno visual para o usuario',
