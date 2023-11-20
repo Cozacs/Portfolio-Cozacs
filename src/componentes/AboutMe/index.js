@@ -29,7 +29,7 @@ export default function About({modoCor}) {
                         <p id='textAbout'>Recently i have been interested about Development, and since then upgrading my hard skills and i can already Develop using <strong>HTML5, CSS3, JS, REACT, NODE.JS.</strong>
                         <br /> <br />
                         I hope u enjoy my projects below</p>
-                        <a href="mailto:victorcozac32@gmail.com" className={modoCoresReverso} id='mail'>
+                        <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank'>
                             <img src={mudaIconeMail} alt="icone" />
                             <p className={`${modoCores} ${entraDireita}`} id='arredonda'>Send me a e-mail</p>
                         </a>

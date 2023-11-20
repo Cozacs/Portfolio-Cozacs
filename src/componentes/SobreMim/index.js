@@ -29,7 +29,7 @@ export default function Sobre({modoCor}) {
                         <p id='textAbout'>Recentemente tenho me interessado pela área de Dev, venho aprimorando minhas habilidades e até o momento já desenvolvo em <strong>HTML5,  CSS3,  JS, REACT, NODE.JS</strong>
                         <br /> <br />
                         Espero que você goste  dos meus projetos abaixo.</p>
-                        <a href="mailto:victorcozac32@gmail.com" className={modoCoresReverso} id='mail'>
+                        <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank'>
                             <img src={mudaIconeMail} alt="icone" />
                             <p className={`${modoCores} ${entraDireita}`} id='arredonda'>Contato e-mail</p>
                         </a>
