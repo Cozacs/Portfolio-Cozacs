@@ -13,13 +13,15 @@ export default function Projects({modoCor, idioma}) {
     const referencia = useRef();
     useEffect(() => {
         const observador = new IntersectionObserver((entries) => {
-         const entrada = entries[0];
-         setEntrouNaTela(entrada.isIntersecting); 
-         console.log("elemento" + entrouNaTela); 
+            const entrada = entries[0];
+            setEntrouNaTela(entrada.isIntersecting); 
+            console.log("elemento" + entrouNaTela); 
         })
         observador.observe(referencia.current);
     }, [entrouNaTela]);
-
+    var entraEsquerda = entrouNaTela ? 'apresentado' : 'naoApresentado';
+    var entraSobe = entrouNaTela ? 'botaoProjeto apresentadoCima' : 'botaoProjeto naoApresentadoCima';
+    
     function voltaPJ() {
         if (projetoExibido > 0){
             setProjetoExibido(projetoExibido-1);
@@ -72,8 +74,8 @@ export default function Projects({modoCor, idioma}) {
     return(
         <section id='Projetos'>
             <div id='ProjetoNaTela'>
-                <h1 className={`letra${defineCor} ${defineBackground} ${entrouNaTela ? 'apresentado' : 'naoApresentado'}`}>{defineTitulo}</h1>
-                <div className={`${defineBackground} ${entrouNaTela ? 'apresentado' : 'naoApresentado'}`} id='conteudoProjeto'>
+                <h1 className={`letra${defineCor} ${defineBackground} ${entraEsquerda}`}>{defineTitulo}</h1>
+                <div className={`${defineBackground} ${entraEsquerda}`} id='conteudoProjeto'>
                     <p className={`letra${defineCor}  ${defineBackground}`}>{defineTexto}</p>
                     <div id='icones'>
                         {js()}
@@ -85,11 +87,11 @@ export default function Projects({modoCor, idioma}) {
                 </div>
             </div>
             <div  id='mostraprojeto' ref={referencia} >
-                <img src={`assets/iconeLeft${defineCor}.png`} alt="Botao esquerdo" className={entrouNaTela ? 'botaoProjeto apresentado' : 'botaoProjeto naoApresentado'} onClick={voltaPJ}/>
+                <img src={`assets/iconeLeft${defineCor}.png`} alt="Botao esquerdo" className={entraSobe} onClick={voltaPJ}/>
 
                 <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" className={entrouNaTela ? 'apresentado' : 'naoApresentado'}/>
 
-                <img src={`assets/iconeRight${defineCor}.png`} alt="Botao direito" className={entrouNaTela ? 'botaoProjeto apresentado' : 'botaoProjeto naoApresentado'} onClick={avancaPJ}/>
+                <img src={`assets/iconeRight${defineCor}.png`} alt="Botao direito" className={entraSobe} onClick={avancaPJ}/>
             </div>
         </section>
     );
