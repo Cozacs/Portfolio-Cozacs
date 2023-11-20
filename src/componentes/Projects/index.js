@@ -14,9 +14,8 @@ export default function Projects({modoCor, idioma}) {
     useEffect(() => {
         const observador = new IntersectionObserver((entries) => {
             const entrada = entries[0];
-            setEntrouNaTela(entrada.isIntersecting); 
-            console.log("elemento" + entrouNaTela); 
-        })
+            setEntrouNaTela(entrada.isIntersecting);
+        });
         observador.observe(referencia.current);
     }, [entrouNaTela]);
     var entraEsquerda = entrouNaTela ? 'apresentado' : 'naoApresentado';
@@ -79,7 +78,7 @@ export default function Projects({modoCor, idioma}) {
                     <p className={`letra${defineCor}  ${defineBackground}`}>{defineTexto}</p>
                     <div id='icones'>
                         {js()}
-                        {css()}
+                        {css()} 
                         {html()}
                         {react()}
                     </div>

@@ -42,6 +42,10 @@
     color: var(--cor02);
 }
 
+#arredonda {
+    border-radius: 10px;
+}
+
 #AboutInfo div {
     width: 80%;
     margin: 20px auto;
@@ -84,6 +88,20 @@
 #mail p {
     padding: 3px;
     padding: 5px 20px;
+}
+
+.naoApresentadoDireita {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(+50%);
+    transition-duration: 1000ms;
+}
+
+.ApresentadoDireita {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition-duration: 1000ms;
 }
 
 @media screen and (max-width: 350px) {

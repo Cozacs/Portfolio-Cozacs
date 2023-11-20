@@ -97,29 +97,29 @@
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition-duration: 2000ms;
+    transition-duration: 1000ms;
 }
   
 .apresentado {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
-    transition-duration: 2000ms;
+    transition-duration: 1000ms;
 }
 
 .naoApresentadoCima {
     opacity: 0;
     filter: blur(15px);
     transform: translateY(+200%);
-    transition-duration: 4000ms;
+    transition-duration: 1000ms;
 }
   
 .apresentadoCima {
     opacity: 1;
     filter: blur(0px);
     transform: translateY(0);
-    transition-delay: 1000ms;
-    transition-duration: 4000ms;
+    transition-delay: 600ms;
+    transition-duration: 1000ms;
 }
 
 @media screen and (max-width: 350px) {

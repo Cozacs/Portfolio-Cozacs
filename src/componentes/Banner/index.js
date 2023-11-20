@@ -17,7 +17,7 @@ export default function Banner({modoCor, setModoCor, setIdioma}) {
     }
 
     return(
-        <section className={defineBack}>
+        <section className={`${defineBack} `}>
             <h1>Cozacs Developer</h1>
             <h3>FULLSTACK</h3>
             <div className={defineShortcuts}>
