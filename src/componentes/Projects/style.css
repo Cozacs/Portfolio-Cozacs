@@ -93,6 +93,22 @@
     background-color: var(--cor03);
 }
 
+.naoApresentado {
+    display: none;
+    visibility: none;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition-duration: 2000ms;
+  }
+  
+.apresentado {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition-duration: 2000ms;
+}
+
 @media screen and (max-width: 350px) {
     
     #Projetos {

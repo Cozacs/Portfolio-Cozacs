@@ -1,5 +1,5 @@
 import './style.css';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import DadosDeProjetos from '../../dados/dados';
 
 export default function Projects({modoCor, idioma}) {
@@ -9,6 +9,16 @@ export default function Projects({modoCor, idioma}) {
     var defineBackground = modoCor === 'escuro' ? 'FundoDark' : 'FundoLight';
     var defineBackgroundInvertido = modoCor === 'escuro' ? 'FundoLight' : 'FundoDark';
     const [projetoExibido, setProjetoExibido] = useState(0);
+    const [entrouNaTela, setEntrouNaTela] = useState();
+    const referencia = useRef();
+    useEffect(() => {
+        const observador = new IntersectionObserver((entries) => {
+         const entrada = entries[0];
+         setEntrouNaTela(entrada.isIntersecting); 
+         console.log("elemento" + entrouNaTela); 
+        })
+        observador.observe(referencia.current);
+    }, [entrouNaTela]);
 
     function voltaPJ() {
         if (projetoExibido > 0){
@@ -62,8 +72,8 @@ export default function Projects({modoCor, idioma}) {
     return(
         <section id='Projetos'>
             <div id='ProjetoNaTela'>
-                <h1 className={`letra${defineCor} ${defineBackground}`}>{defineTitulo}</h1>
-                <div className={`${defineBackground}`} id='conteudoProjeto'>
+                <h1 className={`letra${defineCor} ${defineBackground} ${entrouNaTela ? 'apresentado' : 'naoApresentado'}`}>{defineTitulo}</h1>
+                <div className={`${defineBackground} ${entrouNaTela ? 'apresentado' : 'naoApresentado'}`} id='conteudoProjeto'>
                     <p className={`letra${defineCor}  ${defineBackground}`}>{defineTexto}</p>
                     <div id='icones'>
                         {js()}
@@ -74,10 +84,12 @@ export default function Projects({modoCor, idioma}) {
                     <a className={`letra${defineCorInvertido}  ${defineBackgroundInvertido}`} id='abrirProjeto' href={naTela.Link} target='_blank' rel='noreferrer'>{defineIdioma}</a>
                 </div>
             </div>
-            <div  id='mostraprojeto'>
-                <img src={`assets/iconeLeft${defineCor}.png`} alt="Botao esquerdo" className='botaoProjeto' onClick={voltaPJ}/>
-                <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" />
-                <img src={`assets/iconeRight${defineCor}.png`} alt="Botao direito" className='botaoProjeto' onClick={avancaPJ}/>
+            <div  id='mostraprojeto' ref={referencia} >
+                <img src={`assets/iconeLeft${defineCor}.png`} alt="Botao esquerdo" className={entrouNaTela ? 'botaoProjeto apresentado' : 'botaoProjeto naoApresentado'} onClick={voltaPJ}/>
+
+                <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" className={entrouNaTela ? 'apresentado' : 'naoApresentado'}/>
+
+                <img src={`assets/iconeRight${defineCor}.png`} alt="Botao direito" className={entrouNaTela ? 'botaoProjeto apresentado' : 'botaoProjeto naoApresentado'} onClick={avancaPJ}/>
             </div>
         </section>
     );
