@@ -1,4 +1,5 @@
 import '../Banner/style.css';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Estandarte({modoCor, setModoCor, setIdioma}) {
     var defineBack = modoCor === 'escuro' ? 'back backDark' : 'back backLight';
@@ -11,13 +12,28 @@ export default function Estandarte({modoCor, setModoCor, setIdioma}) {
     var corAboutIcon = modoCor === 'escuro' ? '/assets/iconeAboutDark.png' : '/assets/iconeAboutLight.png';
     var corProjectIcon = modoCor === 'escuro' ? '/assets/iconeProjectDark.png' : '/assets/iconeProjectLight.png';
     var textoModo = modoCor === 'escuro' ? 'Light Mode' : 'Dark Mode';
+    var botaoCor = modoCor === 'escuro' ? 'buttonBackLight.png' : 'buttonBackDark.png';
+
+    const [botaoAparece, setBotaoAparece] = useState();
+    const referenciaBotao = useRef();
+
+    useEffect(() => {
+        const ObservadorBotao = new IntersectionObserver((dados) => {
+            const dado = dados[0];
+            setBotaoAparece(dado.isIntersecting);
+            console.log(botaoAparece);
+        });
+        ObservadorBotao.observe(referenciaBotao.current);
+    }, [botaoAparece]);
 
     const mudaModo = () => {
         modoCor === 'escuro' ? setModoCor('claro') : setModoCor('escuro');
     }
 
+    var botaoLigado = botaoAparece ? 'On': 'Off';
+
     return(
-        <section className={defineBack}>
+        <section className={defineBack}  ref={referenciaBotao} id='Topo'>
             <h1>Desenvolvedor Cozacs</h1>
             <h3>FULLSTACK</h3>
             <div className={defineShortcuts}>
@@ -58,6 +74,9 @@ export default function Estandarte({modoCor, setModoCor, setIdioma}) {
                     </a>
                 </div>
             </div>
+            <a href="#Topo" id="fixoNoCanto" className={botaoLigado}>
+                <img src={`assets/${botaoCor}`} alt="Botao de Voltar pro Topo" id='botaoVoltar'/>
+            </a>
         </section>
     );
 }

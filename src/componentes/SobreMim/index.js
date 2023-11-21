@@ -15,7 +15,6 @@ export default function Sobre({modoCor}) {
             setNaTela(entrada.isIntersecting);
         });
         observador.observe(ReferenciaSobre.current);
-        console.log("Valor de naTela", naTela);
     }, [naTela]);
     var entraDireita = naTela ? 'ApresentadoDireita' : 'naoApresentadoDireita';
 
@@ -29,7 +28,7 @@ export default function Sobre({modoCor}) {
                         <p id='textAbout'>Recentemente tenho me interessado pela área de Dev, venho aprimorando minhas habilidades e até o momento já desenvolvo em <strong>HTML5,  CSS3,  JS, REACT, NODE.JS</strong>
                         <br /> <br />
                         Espero que você goste  dos meus projetos abaixo.</p>
-                        <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank'>
+                        <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank' rel='noreferrer'>
                             <img src={mudaIconeMail} alt="icone" />
                             <p className={`${modoCores} ${entraDireita}`} id='arredonda'>Contato e-mail</p>
                         </a>

@@ -138,6 +138,26 @@
     cursor: pointer;
 }
 
+#fixoNoCanto {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.On {
+    display: none;
+}
+
+.Off {
+    display: block;
+}
+
+#botaoVoltar {
+    opacity: 80%;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 700px) {
     .back {
         height: 100vh;
