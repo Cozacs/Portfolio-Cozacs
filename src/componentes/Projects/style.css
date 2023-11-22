@@ -45,12 +45,14 @@
     width: 80%;
     margin: 20px auto;
     font-size: clamp(8px, 8vw, 20px);
+    text-align: center;
 }
 
 #conteudoProjeto a {
     font-size: clamp(8px, 8vw, 20px);
     margin: 20px auto;
     text-decoration: none;
+    min-height: ;
 }
 
 #icones{
@@ -168,13 +170,18 @@
         flex-direction: column;
     }
 
-    #ProjetoNaTela h1 {
+    #ProjetoNaTela {
         width: 50%;
+    }
+
+    #ProjetoNaTela h1 {
+        width: 100%;
         text-align: center;
     }
 
     #conteudoProjeto {
-        width: 60%;
+        width: 100%;
+        min-height: 320px;
     }
 
     #conteudoProjeto a {
