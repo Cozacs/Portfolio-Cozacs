@@ -33,7 +33,7 @@ export default function Estandarte({modoCor, setModoCor, setIdioma}) {
     var botaoLigado = botaoAparece ? 'On': 'Off';
 
     return(
-        <section className={defineBack}  ref={referenciaBotao} id='Topo'>
+        <section className={defineBack}  ref={referenciaBotao} id='Topo' fetchpriority='high'>
             <h1>Desenvolvedor Cozacs</h1>
             <h3>FULLSTACK</h3>
             <div className={defineShortcuts}>
