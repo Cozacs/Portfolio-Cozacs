@@ -86,11 +86,11 @@ export default function Projects({modoCor, idioma}) {
                 </div>
             </div>
             <div  id='mostraprojeto' ref={referencia} >
-                <img src={`assets/iconeLeft${defineCor}.png`} alt="Botao esquerdo" className={entraSobe} onClick={voltaPJ}/>
+                <img src={`assets/iconeLeftLight.png`} alt="Botao esquerdo" className={entraSobe} onClick={voltaPJ}/>
 
                 <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" className={entrouNaTela ? 'apresentado' : 'naoApresentado'}/>
 
-                <img src={`assets/iconeRight${defineCor}.png`} alt="Botao direito" className={entraSobe} onClick={avancaPJ}/>
+                <img src={`assets/iconeRightLight.png`} alt="Botao direito" className={entraSobe} onClick={avancaPJ}/>
             </div>
         </section>
     );
