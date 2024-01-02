@@ -91,6 +91,8 @@
 }
 
 .naoApresentadoDireita {
+    visibility: hidden;
+    overflow: hidden;
     opacity: 0;
     filter: blur(15px);
     transform: translateX(+50%);
@@ -98,6 +100,8 @@
 }
 
 .ApresentadoDireita {
+    visibility: visible;
+    overflow: visible;
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
