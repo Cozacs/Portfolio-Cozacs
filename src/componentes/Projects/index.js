@@ -73,7 +73,7 @@ export default function Projects({modoCor, idioma}) {
     return(
         <section id='Projetos'>
             <div id='ProjetoNaTela'>
-                <h1 className={`letra${defineCor} ${defineBackground} ${entraEsquerda}`}>{defineTitulo}</h1>
+                <h2 className={`letra${defineCor} ${defineBackground} ${entraEsquerda}`}>{defineTitulo}</h2>
                 <div className={`${defineBackground} ${entraEsquerda}`} id='conteudoProjeto'>
                     <p className={`letra${defineCor}  ${defineBackground}`}>{defineTexto}</p>
                     <div id='icones'>
@@ -86,11 +86,11 @@ export default function Projects({modoCor, idioma}) {
                 </div>
             </div>
             <div  id='mostraprojeto' ref={referencia} >
-                <img src={`assets/iconeLeftLight.png`} alt="Botao esquerdo" className={entraSobe} onClick={voltaPJ}/>
+                <img src={`assets/iconeLeftLight.png`} alt="Botao esquerdo" title='Botao voltar' className={entraSobe} onClick={voltaPJ}/>
 
-                <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" className={entrouNaTela ? 'apresentado' : 'naoApresentado'}/>
+                <img src={`assets/Projeto${naTela.foto}.png`} alt="Imagem do Projeto em execução" title='Foto do Projeto Criado tambem pelo mesmo desenvolvedor full-stack' className={entrouNaTela ? 'apresentado' : 'naoApresentado'}/>
 
-                <img src={`assets/iconeRightLight.png`} alt="Botao direito" className={entraSobe} onClick={avancaPJ}/>
+                <img src={`assets/iconeRightLight.png`} alt="Botao direito" title='Botao avançar' className={entraSobe} onClick={avancaPJ}/>
             </div>
         </section>
     );

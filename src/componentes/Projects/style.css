@@ -21,7 +21,7 @@
     height: 100%;
 }
 
-#ProjetoNaTela h1 {
+#ProjetoNaTela h2 {
     width: 60%;
     margin: 20px auto;
     font-size: clamp(8px, 8vw, 35px);
@@ -52,7 +52,6 @@
     font-size: clamp(8px, 8vw, 20px);
     margin: 20px auto;
     text-decoration: none;
-    min-height: ;
 }
 
 #icones{
@@ -174,7 +173,7 @@
         width: 50%;
     }
 
-    #ProjetoNaTela h1 {
+    #ProjetoNaTela h2 {
         width: 100%;
         text-align: center;
     }

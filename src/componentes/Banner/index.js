@@ -34,48 +34,48 @@ export default function Banner({modoCor, setModoCor, setIdioma}) {
 
     return(
         <section className={`${defineBack}`} ref={referenciaBotao} id='Topo' fetchpriority='high' >
-            <h1>Cozacs Developer</h1>
-            <h3>FULLSTACK</h3>
+            <h1>Full-Stack Developer</h1>
+            <h3>Cozacs</h3>
             <div className={defineShortcuts}>
                 <div className={defineAcess}>
                     <a href="https://github.com/Cozacs" target='_blank' rel='noreferrer' >
-                        <img src={corGit} alt="GitHub" />
+                        <img src={corGit} alt="GitHub" title='Icone do Github' />
                         <p className='opacidade'>GitHub</p>
                     </a>
                 </div>
                 <div className={defineAcess}>
                     <a href="https://www.linkedin.com/in/victor-hugo-cozac-54703213a/" target='_blank' rel='noreferrer'>
-                        <img src={corLinked} alt="LinkedIn" />
+                        <img src={corLinked} alt="LinkedIn" title='Icone do Linkedin' />
                         <p className='opacidade'>LinkedIn</p>
                     </a>
                 </div>
                 <div className={defineAcess}>
                     <p onClick={mudaModo}>
-                        <img src={corModoCor} alt="Cor da Pagina" />
+                        <img src={corModoCor} alt="Cor da Pagina"  title='Icone do tema da pagina' />
                         <span className='opacidade'>{textoModo}</span>
                     </p>
                 </div>
                 <div className={defineAcess}>
                     <p onClick={() => setIdioma('pt')} >
-                        <img src={corLang} alt="Cor da Pagina" />
+                        <img src={corLang} alt="Idioma da Pagina" title='Icone da lingua da pagina' />
                         <span className='opacidade'>Português</span>
                     </p>
                 </div>
                 <div className={defineAcess}>
                     <a href="#About">
-                        <img src={corAboutIcon} alt="Cor da Pagina" />
+                        <img src={corAboutIcon} alt="Seção sobre mim da Pagina" title='Icone da seção sobre mim' />
                         <p className='opacidade'>About me</p>
                     </a>
                 </div>
                 <div className={defineAcess}>
                     <a href="#Projetos">
-                        <img src={corProjectIcon} alt="Cor da Pagina" />
+                        <img src={corProjectIcon} alt="Seção projetos da Pagina" title='Icone da seção projetos' />
                         <p className='opacidade'>Projects</p>
                     </a>
                 </div>
             </div>
             <a href="#Topo" id="fixoNoCanto" className={botaoLigado}>
-                <img src={`assets/${botaoCor}`} alt="Botao de Voltar pro Topo" id='botaoVoltar'/>
+                <img src={`assets/${botaoCor}`} alt="Botao de Voltar pro Topo" title='Icone de redirecionamento pro topo' id='botaoVoltar'/>
             </a>
         </section>
     );

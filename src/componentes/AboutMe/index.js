@@ -21,9 +21,9 @@ export default function About({modoCor}) {
     return(
         <section id='About'>
             <div id='Abouti' ref={ReferenciaSobre}>
-                <img src={mudaFoto} alt="Foto Perfil" className={entraDireita} />
+                <img src={mudaFoto} alt="Foto Perfil" title='Foto do desenvolvedor Fullstack' className={entraDireita} />
                 <div id='AboutInfo'>
-                    <h1 className={`${modoCores} ${entraDireita}`}>About me</h1>
+                    <h2 className={`${modoCores} ${entraDireita}`}>About me</h2>
                     <div className={`${modoCores} ${entraDireita}`} id='content'>
                         <p id='textAbout'>Recently i have been interested about Development, and since then upgrading my hard skills and i can already Develop using <strong>HTML5, CSS3, JS, REACT, NODE.JS.</strong>
                         <br /> <br />

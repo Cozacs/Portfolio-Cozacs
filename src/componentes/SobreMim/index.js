@@ -21,9 +21,9 @@ export default function Sobre({modoCor}) {
     return(
         <section className={CorFundo} id="About">
             <div id='Abouti' ref={ReferenciaSobre}>
-                <img src={mudaFoto} alt="Foto Perfil" className={entraDireita} />
+                <img src={mudaFoto} alt="Foto Perfil" title='Foto do desenvolvedor Fullstack' className={entraDireita} />
                 <div id='AboutInfo'>
-                    <h1 className={`${modoCores} ${entraDireita}`}>Sobre mim</h1>
+                    <h2 className={`${modoCores} ${entraDireita}`}>Sobre mim</h2>
                     <div className={`${modoCores} ${entraDireita}`} id='content'>
                         <p id='textAbout'>Recentemente tenho me interessado pela área de Dev, venho aprimorando minhas habilidades e até o momento já desenvolvo em <strong>HTML5,  CSS3,  JS, REACT, NODE.JS</strong>
                         <br /> <br />
