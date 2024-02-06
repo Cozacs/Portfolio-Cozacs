@@ -5,6 +5,10 @@
   AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
 </IfModule>
 
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
 <IfModule mod_expires.c>
     ExpiresActive on
  
