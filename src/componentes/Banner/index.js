@@ -44,7 +44,7 @@ export default function Banner({modoCor, setModoCor, setIdioma}) {
                     </a>
                 </div>
                 <div className={defineAcess}>
-                    <a href="www.linkedin.com/in/cozacvictor" target='_blank' rel='noreferrer'>
+                    <a href="https://www.linkedin.com/in/cozacvictor" target='_blank' rel='noreferrer'>
                         <img src={corLinked} alt="LinkedIn" title='Icone do Linkedin' />
                         <p className='opacidade'>LinkedIn</p>
                     </a>
