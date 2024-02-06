@@ -14,6 +14,10 @@
     ExpiresByType image/png "access plus 1 month"
 </IfModule>
 
+<IfModule mod_headers.c>
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
 RewriteEngine On
 
 # redireciona o http
