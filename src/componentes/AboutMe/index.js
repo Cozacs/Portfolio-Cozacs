@@ -25,11 +25,11 @@ export default function About({modoCor}) {
                 <div id='AboutInfo'>
                     <h2 className={`${modoCores} ${entraDireita}`}>About me</h2>
                     <div className={`${modoCores} ${entraDireita}`} id='content'>
-                        <p id='textAbout'>Recently i have been interested about Development, and since then upgrading my hard skills and i can already Develop using <strong>HTML5, CSS3, JS, REACT, NODE.JS.</strong>
+                        <p id='textAbout'>Recently i have been interested about Development and since then upgrading my hard skills to be a better developer, i'm using this technologies below to develop web sites for my clients <strong>HTML5, CSS3, JavaScript, REACT, NODE.JS, API:Rest and MySQL</strong> you can see some projects in the next section.
                         <br /> <br />
-                        I hope u enjoy my projects below</p>
+                        I hope you enjoy my projects below</p>
                         <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank' rel='noreferrer'>
-                            <img src={mudaIconeMail} alt="icone" />
+                            <img src={mudaIconeMail} alt="Icone de e-mail" title='Icone de e-mail' />
                             <p className={`${modoCores} ${entraDireita}`} id='arredonda'>Send me a e-mail</p>
                         </a>
                     </div>

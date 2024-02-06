@@ -44,7 +44,7 @@ export default function Estandarte({modoCor, setModoCor, setIdioma}) {
                     </a>
                 </div>
                 <div className={defineAcess}>
-                    <a href="https://www.linkedin.com/in/victor-hugo-cozac-54703213a/" target='_blank' rel='noreferrer'>
+                    <a href="https://www.linkedin.com/in/cozacvictor" target='_blank' rel='noreferrer'>
                         <img src={corLinked} alt="LinkedIn" title='Icone do Linkedin' />
                         <p className='opacidade'>LinkedIn</p>
                     </a>

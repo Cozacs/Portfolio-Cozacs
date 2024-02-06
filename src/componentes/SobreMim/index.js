@@ -25,7 +25,8 @@ export default function Sobre({modoCor}) {
                 <div id='AboutInfo'>
                     <h2 className={`${modoCores} ${entraDireita}`}>Sobre mim</h2>
                     <div className={`${modoCores} ${entraDireita}`} id='content'>
-                        <p id='textAbout'>Recentemente tenho me interessado pela área de Dev, venho aprimorando minhas habilidades e até o momento já desenvolvo em <strong>HTML5,  CSS3,  JS, REACT, NODE.JS</strong>
+                        <p id='textAbout'>Recentemente tenho me interessado pela área de Desenvolvimento e desde entao venho aprimorando minhas habilidades para me tornar um desenvolver melhor a cada dia, eu já estou utilizando as tecnologias abaixo para desenvolver sites para os meus clientes <strong>HTML5, CSS3, JavaScript, REACT, NODE.JS, API:Rest e MySQL</strong>
+                        voce pode ver alguns projetos na próxima seção.
                         <br /> <br />
                         Espero que você goste  dos meus projetos abaixo.</p>
                         <a href="mailto:portfolio@cozacdev.com.br" className={modoCoresReverso} id='mail' target='_blank' rel='noreferrer'>

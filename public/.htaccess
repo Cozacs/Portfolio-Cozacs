@@ -1,8 +1,27 @@
-
-
 # php -- BEGIN cPanel-generated handler, do not edit
 # Defina o pacote “ea-php82” como a linguagem padrão de programação “PHP”.
+
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
 </IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+ 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+RewriteEngine On
+
+# redireciona o http
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# redireciona o www
+RewriteCond %{HTTP_HOST} ^www\.cozacdev\.com\.br [NC]
+RewriteRule ^(.*)$ https://cozacdev.com.br/$1 [L,R=301]
+
 # php -- END cPanel-generated handler, do not edit
