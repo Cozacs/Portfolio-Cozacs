@@ -49,6 +49,19 @@ const DadosDeProjetos = [
         HTML : true,
         REACT : false,
     },
+    {
+        id : 5,
+        foto : 'QualIdade',
+        tituloEn: 'Project - Animals',
+        tituloPT: 'Projeto - Animais',
+        TextoEn: 'Project created by Lun Dev, developed by my self with high visual feedback for the user',
+        TextoPT: 'Projeto proposto pela Lun Dev, desenvolvido por mim com um alto retorno visual para o usuario',
+        Link: 'https://animals-hewut8cec-cozacs-projects.vercel.app',
+        JS : true,
+        CSS : true,
+        HTML : true,
+        REACT : true, 
+    }
 ];
 
 export default DadosDeProjetos;
