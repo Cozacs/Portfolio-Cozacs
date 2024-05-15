@@ -1,6 +1,19 @@
 const DadosDeProjetos = [
     {
         id : 1,
+        foto : 'Animais',
+        tituloEn: 'Project - Animals',
+        tituloPT: 'Projeto - Animais',
+        TextoEn: 'Project created by Lun Dev, developed by my self with high visual feedback for the user',
+        TextoPT: 'Projeto proposto pela Lun Dev, desenvolvido por mim com um alto retorno visual para o usuario',
+        Link: 'https://animals-hewut8cec-cozacs-projects.vercel.app',
+        JS : true,
+        CSS : true,
+        HTML : true,
+        REACT : true, 
+    },
+    {
+        id : 2,
         foto : 'Sorveteria',
         tituloEn: 'Project - Sorveteria',
         tituloPT: 'Projeto - Sorveteria',
@@ -13,7 +26,7 @@ const DadosDeProjetos = [
         REACT : true,
     },
     {
-        id : 2,
+        id : 3,
         foto : 'Cordel',
         tituloEn: 'Project - Cordel',
         tituloPT: 'Projeto - Cordel',
@@ -25,7 +38,7 @@ const DadosDeProjetos = [
         HTML : true,
         REACT : false,
     },{
-        id : 3,
+        id : 4,
         foto : 'Analizador',
         tituloEn: 'Project - Analize',
         tituloPT: 'Projeto - Analizador',
@@ -37,7 +50,7 @@ const DadosDeProjetos = [
         HTML : true,
         REACT : false,
     },{
-        id : 4,
+        id : 5,
         foto : 'QualIdade',
         tituloEn: 'Project - How Old r U?',
         tituloPT: 'Projeto - Qual a minha idade?',
@@ -48,19 +61,6 @@ const DadosDeProjetos = [
         CSS : true,
         HTML : true,
         REACT : false,
-    },
-    {
-        id : 5,
-        foto : 'QualIdade',
-        tituloEn: 'Project - Animals',
-        tituloPT: 'Projeto - Animais',
-        TextoEn: 'Project created by Lun Dev, developed by my self with high visual feedback for the user',
-        TextoPT: 'Projeto proposto pela Lun Dev, desenvolvido por mim com um alto retorno visual para o usuario',
-        Link: 'https://animals-hewut8cec-cozacs-projects.vercel.app',
-        JS : true,
-        CSS : true,
-        HTML : true,
-        REACT : true, 
     }
 ];
 
