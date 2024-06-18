@@ -1,6 +1,19 @@
 const DadosDeProjetos = [
     {
         id : 1,
+        foto : 'Dragons',
+        tituloEn: 'Project - Dragons Guide',
+        tituloPT: 'Projeto - Guia de Dragões',
+        TextoEn: 'Project created to bring a sense of creativity on how to make a small project look nice',
+        TextoPT: 'Projeto criado para trazer um pouco da sensação de criatividade sobre como fazer um pequeno projeto ser legal',
+        Link: 'https://dragons-guide.vercel.app',
+        JS : true,
+        CSS : true,
+        HTML : true,
+        REACT : true, 
+    },
+    {
+        id : 2,
         foto : 'Animais',
         tituloEn: 'Project - Animals',
         tituloPT: 'Projeto - Animais',
@@ -13,7 +26,20 @@ const DadosDeProjetos = [
         REACT : true, 
     },
     {
-        id : 2,
+        id : 3,
+        foto : 'Wolf',
+        tituloEn: 'Project - Wolf',
+        tituloPT: 'Projeto - Lobo',
+        TextoEn: 'Project to practice some CSS animations on the loading page',
+        TextoPT: 'Projeto para exercitar um pouco de animações em CSS ao carregar a pagina',
+        Link: 'https://wolf-moon-azure.vercel.app',
+        JS : true,
+        CSS : true,
+        HTML : true,
+        REACT : true, 
+    },
+    {
+        id : 4,
         foto : 'Sorveteria',
         tituloEn: 'Project - Sorveteria',
         tituloPT: 'Projeto - Sorveteria',
@@ -26,7 +52,7 @@ const DadosDeProjetos = [
         REACT : true,
     },
     {
-        id : 3,
+        id : 5,
         foto : 'Cordel',
         tituloEn: 'Project - Cordel',
         tituloPT: 'Projeto - Cordel',
@@ -38,7 +64,7 @@ const DadosDeProjetos = [
         HTML : true,
         REACT : false,
     },{
-        id : 4,
+        id : 6,
         foto : 'Analizador',
         tituloEn: 'Project - Analize',
         tituloPT: 'Projeto - Analizador',
@@ -50,7 +76,7 @@ const DadosDeProjetos = [
         HTML : true,
         REACT : false,
     },{
-        id : 5,
+        id : 7,
         foto : 'QualIdade',
         tituloEn: 'Project - How Old r U?',
         tituloPT: 'Projeto - Qual a minha idade?',
